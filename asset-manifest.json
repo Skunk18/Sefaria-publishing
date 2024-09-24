@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Sefaria-publishing/static/css/main.6551f7d0.css",
+    "main.css": "/Sefaria-publishing/static/css/main.0f96e101.css",
     "main.js": "/Sefaria-publishing/static/js/main.ba696aa8.js",
     "static/media/gently-logo.svg": "/Sefaria-publishing/static/media/gently-logo.741e0608965c3d39b9c00d1b1c6d3121.svg",
     "static/media/sefaria-logo.svg": "/Sefaria-publishing/static/media/sefaria-logo.bed384ec60cee901267f3d6e8c529ea0.svg",
     "index.html": "/Sefaria-publishing/index.html",
-    "main.6551f7d0.css.map": "/Sefaria-publishing/static/css/main.6551f7d0.css.map",
+    "main.0f96e101.css.map": "/Sefaria-publishing/static/css/main.0f96e101.css.map",
     "main.ba696aa8.js.map": "/Sefaria-publishing/static/js/main.ba696aa8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6551f7d0.css",
+    "static/css/main.0f96e101.css",
     "static/js/main.ba696aa8.js"
   ]
 }
