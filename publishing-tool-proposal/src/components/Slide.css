@@ -70,12 +70,34 @@
   font-size: 16px; /* Size of the icon */
 }
 
-/* Custom bullet points using spans */
-.custom-bullet-icon {
+/* Style for bullet points or custom icons if using spans */
+.slide-content .custom-bullet-icon {
   margin-right: 10px; /* Space between bullet icon and text */
   vertical-align: middle; /* Align with text */
-  display: inline-flex; /* Ensure proper alignment */
-  align-items: center; /* Vertically center the icon */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .slide-list-item {
+    font-size: 16px; /* Smaller font size for smaller screens */
+    line-height: 1.4; /* Reduced line height */
+  }
+
+  .slide-list-item .slide-icon {
+    font-size: 18px; /* Smaller icon size */
+    width: 18px; /* Reduced width */
+    height: 18px; /* Reduced height */
+    margin-right: 8px; /* Adjusted spacing */
+  }
+}
+
+/* Footer styling for the slide */
+.slide-footer {
+  margin-top: 25px; /* Space above the footer */
+  font-size: 16px; /* Font size for footer */
+  color: #777; /* Lighter color for footer text */
+  text-align: center; /* Center-align footer */
+  width: 100%; /* Full width */
 }
 
 /* Responsive styling for smaller screens */
@@ -93,28 +115,7 @@
     padding: 0 10px; /* Less padding */
   }
 
-  .slide-list-item {
-    font-size: 16px; /* Smaller font size for smaller screens */
-    line-height: 1.4; /* Reduced line height */
-  }
-
-  .slide-list-item .slide-icon {
-    font-size: 18px; /* Smaller icon size */
-    width: 18px; /* Reduced width */
-    height: 18px; /* Reduced height */
-    margin-right: 8px; /* Adjusted spacing */
-  }
-
   .slide-footer {
     font-size: 14px; /* Smaller font size for footer */
   }
-}
-
-/* Footer styling for the slide */
-.slide-footer {
-  margin-top: 25px; /* Space above the footer */
-  font-size: 16px; /* Font size for footer */
-  color: #777; /* Lighter color for footer text */
-  text-align: center; /* Center-align footer */
-  width: 100%; /* Full width */
 }

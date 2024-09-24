@@ -3,9 +3,9 @@
 // Define the interface for the icon configuration
 interface IconConfig {
   [key: string]: {
-    name: string;
-    size?: number;
-    color?: string;
+    name: string; // The name of the SVG file in the icons directory (without .svg extension)
+    size?: number; // Optional size for the icon
+    color?: string; // Optional color for the icon
   };
 }
 

@@ -1,25 +1,116 @@
+/* General card styling for the slide component */
 .slide {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
+  background-color: #ffffff; /* White background for the card */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 15px; /* Rounded corners for the card */
+  padding: 30px; /* Padding inside the card */
+  margin: 20px auto; /* Centered with space around it */
+  max-width: 800px; /* Maximum width for the card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align content */
 }
 
+/* Styling for the slide header */
+.slide-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the icon and title */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+/* Styling for the header icon */
+.slide-header-icon {
+  width: 50px; /* Size of the icon */
+  height: 50px; /* Size of the icon */
+  margin-right: 20px; /* Space between the icon and title */
+  fill: #007bff; /* Icon color */
+}
+
+/* Title styling for the slide */
 .slide-title {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 28px; /* Larger font size for the title */
+  font-weight: 700; /* Bold text */
+  color: #333; /* Darker text color */
+  margin: 0; /* Remove default margins */
+  text-align: left; /* Align text left */
 }
 
+/* Content styling for the slide */
 .slide-content {
-  font-size: 18px;
-  line-height: 1.5;
-  white-space: pre-wrap;
+  font-size: 18px; /* Font size for content */
+  line-height: 1.6; /* Line height for readability */
+  color: #555; /* Slightly lighter text color */
+  width: 100%; /* Full width for content */
+  text-align: left; /* Align text left */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align content to the left */
+  gap: 10px; /* Space between list items */
 }
 
+/* Styling for list items with icons */
+.slide-list-item {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  margin: 5px 0; /* Space between list items */
+}
+
+/* Styling for the icons in list items */
+.slide-icon {
+  width: 24px; /* Icon size */
+  height: 24px; /* Icon size */
+  margin-right: 10px; /* Space between icon and text */
+  fill: #007bff; /* Blue color for icons */
+}
+
+/* Footer styling for the slide */
 .slide-footer {
-  margin-top: 20px;
-  font-size: 16px;
-  color: #777;
+  margin-top: 25px; /* Space above the footer */
+  font-size: 16px; /* Font size for footer */
+  color: #777; /* Lighter color for footer text */
+  text-align: center; /* Center-align footer */
+  width: 100%; /* Full width */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .slide {
+    padding: 20px; /* Less padding for smaller screens */
+  }
+
+  .slide-header {
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center; /* Center-align header content */
+  }
+
+  .slide-header-icon {
+    margin-right: 0; /* Remove margin */
+    margin-bottom: 10px; /* Add space below the icon */
+  }
+
+  .slide-title {
+    text-align: center; /* Center-align title on smaller screens */
+  }
+
+  .slide-content {
+    font-size: 16px; /* Smaller font size for content */
+    gap: 5px; /* Reduce space between list items */
+  }
+
+  .slide-list-item {
+    font-size: 16px; /* Smaller font size for smaller screens */
+    margin: 3px 0; /* Reduce space between list items */
+  }
+
+  .slide-icon {
+    width: 20px; /* Smaller icon size */
+    height: 20px; /* Smaller icon size */
+    margin-right: 8px; /* Adjust space */
+  }
+
+  .slide-footer {
+    font-size: 14px; /* Smaller font size for footer */
+  }
 }

@@ -3,11 +3,13 @@ import Header from './components/Header';
 import Slide from './components/Slide';
 import './styles/App.css'; // Ensure correct path to your CSS file
 
+// Updated slides array with iconName property
 const slides = [
   {
     title: "Sefaria-Gently Ventures Product Incubator",
     content: "Scaling Sefaria's impact through product-led growth.",
     footer: "Proposed by: Dave Weinberg, Founder of Gently Ventures",
+    iconName: "GentlyIcon" // Custom icon for this slide
   },
   {
     title: "Executive Summary",
@@ -18,6 +20,7 @@ const slides = [
       - Goal: New revenue streams, expanded impact, and product innovation.
       - Led by experienced entrepreneur and team builder.
     `,
+    iconName: "DocumentIcon" // Custom icon for this slide
   },
   {
     title: "Dave Weinberg - Gently Ventures",
@@ -27,6 +30,7 @@ const slides = [
       - Scaling: Successful fundraising and scaling programs.
       - Innovation: Proven ability to drive product-led growth and innovation.
     `,
+    iconName: "LeadershipIcon" // Custom icon for this slide
   },
   {
     title: "Relevant Projects & Experiments",
@@ -36,6 +40,7 @@ const slides = [
       - AI Content Platform: Media and content platform using AI for scalable content generation.
       - Rapid Children's Book Creation: Process to create children's books in just 1 hour.
     `,
+    iconName: "ProjectIcon" // Custom icon for this slide
   },
   {
     title: "Incubator Implementation Plan",
@@ -46,6 +51,7 @@ const slides = [
       4. Explore secondary products based on Sefaria's priorities.
       5. Scale successful products and iterate on incubator model.
     `,
+    iconName: "PlanIcon" // Custom icon for this slide
   },
   {
     title: "Custom Publishing Platform - First Product",
@@ -55,6 +61,7 @@ const slides = [
       - AI-enhanced content curation and editing.
       - Potential for physical and digital distribution.
     `,
+    iconName: "PublishingIcon" // Custom icon for this slide
   },
   {
     title: "Incubator Structure",
@@ -64,6 +71,7 @@ const slides = [
       - Partnerships: Strategic collaborations and alliances.
       - Investment: Funding for promising ideas and startups.
     `,
+    iconName: "StructureIcon" // Custom icon for this slide
   },
   {
     title: "Benefits for Sefaria",
@@ -74,15 +82,18 @@ const slides = [
       - Position as a leader in Jewish educational technology.
       - Sustainable model for ongoing innovation and growth.
     `,
+    iconName: "BenefitsIcon" // Custom icon for this slide
   },
   {
     title: "Contact Information",
     content: `
-      - Schedule our next call: Dave Weinberg, Gently Ventures.
-      - LinkedIn: [Link]
+      - Schedule our next call: 
+      - Dave Weinberg, Gently Ventures.
+      - LinkedIn: ["https://www.linkedin.com/in/daveweinberg/"](LinkedIn)
       - Email: dave@gentlyventures.com
       - Phone: 240-678-6863
     `,
+    iconName: "ContactIcon" // Custom icon for this slide
   },
 ];
 
@@ -98,10 +109,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="App">
+    <div className="app-container">
       <Header />
-      <Slide {...slides[currentSlide]} />
-      <div className="navigation">
+      <div className="slide-container">
+        <Slide {...slides[currentSlide]} />
+      </div>
+      <div className="navigation-container">
         {currentSlide > 0 && (
           <button className="nav-button" onClick={goBack}>
             Back
