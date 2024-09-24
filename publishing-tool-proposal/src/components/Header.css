@@ -1,0 +1,58 @@
+/* General styling for the header */
+.header {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space logos evenly on both sides */
+  align-items: center; /* Vertically center items */
+  padding: 20px; /* Padding around the header */
+  background-color: #f9f9f9; /* Light background color */
+  border-bottom: 1px solid #ddd; /* Subtle border for separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  position: sticky; /* Keep the header at the top */
+  top: 0; /* Stick to the top of the page */
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+/* Styling for the logos */
+.logo-container {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the logos */
+  justify-content: center; /* Center logos inside their container */
+}
+
+.logo {
+  height: 50px; /* Standard height for logos */
+  max-width: 150px; /* Ensure logos do not exceed this width */
+  width: auto; /* Keep the width auto for aspect ratio */
+  margin: 0 10px; /* Space around logos */
+}
+
+/* Styling for the title */
+.title {
+  font-size: 24px; /* Large, readable font size */
+  color: #333; /* Darker color for contrast */
+  font-weight: 600; /* Bold font for emphasis */
+  text-align: center; /* Center-align text */
+  flex-grow: 1; /* Allow title to expand in available space */
+  margin: 0 20px; /* Add space around the title */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .title {
+    text-align: center; /* Center-align text */
+    font-size: 20px; /* Slightly smaller font size */
+    margin: 10px 0; /* Adjust margins */
+  }
+
+  .logo {
+    height: 40px; /* Smaller logo height */
+    margin: 5px; /* Reduced margin */
+  }
+}
